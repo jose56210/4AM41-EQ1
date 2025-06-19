@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informática Administrativa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    header {
+      position: relative;
+      padding: 10px;
+      background-color: lightgreen;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    header h2 {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    .logos {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 20px;
+      align-items: center;
+    }
+    .logos img {
+      height: 120px;
+      width: auto;
+    }
+    main {
+      background-image: url('https://i.ytimg.com/vi/_Lp_mJ5UbtQ/maxresdefault.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 20px;
+    }
+    .unidad {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      text-align: left;
+    }
+    .unidad h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+    .unidad ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+      transition: max-height 0.3s ease;
+    }
+    .unidad ul.hidden {
+      display: none;
+    }
+    .unidad ul.visible {
+      display: block;
+    }
+    .unidad ul li {
+      margin: 5px 0;
+    }
+    .unidad ul li a, .unidad ul li span.link-like {
+      color: lightblue;
+      text-decoration: none;
+      font-size: 1.1em;
+      word-break: break-all;
+      cursor: pointer;
+    }
+    .unidad ul li a:hover, .unidad ul li span.link-like:hover {
+      text-decoration: underline;
+    }
+    .sub-list {
+      list-style: none;
+      padding-left: 20px;
+      margin: 5px 0 0 0;
+    }
+    .sub-list.hidden {
+      display: none;
+    }
+    .sub-list.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="https://www.sites.upiicsa.ipn.mx/ets/ipn.png" alt="Logo IPN">
+      <h1>
+        UNIDAD PROFESIONAL INTERDISCIPLINARIA DE<br>
+        INGENIERÍA Y CIENCIAS SOCIALES Y ADMINISTRATIVAS
+      </h1>
+      <img src="https://upiicsa.ipn.mx/assets/files/upiicsa/img/inicio/icon-upiicsa.png" alt="Logo UPIICSA">
+    </div>
+    <h2>ADMINISTRACIÓN INDUSTRIAL</h2>
+    <h2>INFORMÁTICA ADMINISTRATIVA</h2>
+    <h2>4AM41 EQUIPO 1</h2>
+    <p>
+      Arévalo Rojas Mauricio Raziel<br>
+      Barona Elizarraras Valeria<br>
+      Hernández Molina José Eduardo<br>
+      García Hernández Odette Aketzali<br>
+      Valdez Escobar Valeria Montserrat<br>
+      Venado Pedroza Ashly Nicole
+    </p>
+  </header>
+  </header>
+
+  <main>
+    <!-- TEMARIO -->
+    <div class="unidad" id="temario">
+      <h3 onclick="toggleSection('temario-list')">TEMARIO</h3>
+      <ul id="temario-list" class="hidden">
+        <li><a href="INFORMÁTICA ADMINISTRATIVA oficial (3).pdf" target="_blank">Ver Temario (PDF)</a></li>
+      </ul>
+    </div>
+
+    <!-- PROYECTO -->
+    <div class="unidad" id="proyecto">
+      <h3 onclick="toggleSection('proyecto-list')">PROYECTO</h3>
+      <ul id="proyecto-list" class="hidden">
+        <li><a href="1.DESCRIPCION DEL PROYECTO.pdf" target="_blank">DESCRIPCIÓN DEL PROYECTO</a></li>
+        <li><a href="2.FUNCIONAMIENTO DEL PROYECTO.pdf" target="_blank">FUNCIONAMIENTO DEL PROYECTO</a></li>
+        <li><a href="3.MAPA VISUAL.pdf" target="_blank">MAPA VISUAL</a></li>
+        <li><a href="4.CRONOGRAMA DE ACTIVIDADES.pdf" target="_blank">CRONOGRAMA</a></li>
+        <li><a href="EXCEL.xlsx" target="_blank">EXCEL</a></li>
+        <li><a href="TIENDA.pdf" target="_blank">TIENDA</a></li>
+      </ul>
+    </div>
+
+    <!-- UNIDAD I -->
+    <div class="unidad" id="unidad1">
+      <h3 onclick="toggleSection('unidad1-list')">UNIDAD I</h3>
+      <ul id="unidad1-list" class="hidden">
+        <li><a href="1.INVESTIGACION U1.pdf" target="_blank">INVESTIGACIÓN</a></li>
+        <li><a href="2.PRESENTACIÓN_U1_NNOVACION EMPRESARIAL.pdf" target="_blank">PRESENTACIÓN</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('videos1-list')">VIDEOS DE APOYO</span>
+          <ul id="videos1-list" class="sub-list hidden">
+            <li><a href="https://youtu.be/jYeLvpE19dA?si=VJNL9j03KkyDGWrY" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/WOTOnuQOMdc?si=yvEqyBhmkvlqXPVg" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/wlykHD0-_qk?si=zbRTS1A6AySgLiyK" target="_blank">Video 3</a></li>
+          </ul>
+        </li>
+        <li><a href="3.Guia de estudio_Cuestionario_U1_Innovacion_Empresarial.pdf" target="_blank">GUÍA DE ESTUDIO</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('resumenes1-list')">RESÚMENES Y PRÁCTICAS</span>
+          <ul id="resumenes1-list" class="sub-list hidden">
+          <li><a href="UNIDADES DE ALMACENAMIENTO Y SU EQUIVALENCIA.pdf" target="_blank">UNIDADES DE ALMACENAMIENTO Y SU EQUIVALENCIA</a></li>
+          <li><a href="Practica 1._ 20000 datos.xlsx" target="_blank">Practica 1</a></li>
+          <li><a href="RESUMEN UNI_1.pdf" target="_blank">RESUMEN UNIDAD 1</a></li>
+      </ul>
+    </div>
+
+    <!-- UNIDAD II -->
+    <div class="unidad" id="unidad2">
+      <h3 onclick="toggleSection('unidad2-list')">UNIDAD II</h3>
+      <ul id="unidad2-list" class="hidden">
+        <li><a href="1.INVESTIGACION UNIDAD 2.pdf" target="_blank">INVESTIGACIÓN</a></li>
+        <li><a href="2.PRESENTACION_UNIDAD 2.pdf" target="_blank">PRESENTACIÓN</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('videos2-list')">VIDEOS DE APOYO</span>
+          <ul id="videos2-list" class="sub-list hidden">
+            <li><a href="https://youtu.be/L4HYHOKXjo8?si=mrS-7Slu2t5JtvSO" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/cQ9wKd2ptM0?si=kx1TixPJNNpszb-G" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/W6jm0dWnup0?si=KprjnXEsIPmJ9w2t" target="_blank">Video 3</a></li>
+          </ul>
+        </li>
+        <li><a href="3.Guia de Esudio_Cuestionario UNIDAD 2.pdf" target="_blank">GUÍA DE ESTUDIO</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('resumenes2-list')">RESÚMENES Y PRÁCTICAS</span>
+          <ul id="resumenes2-list" class="sub-list hidden">
+          <li><a href="LISTA DE DIRECTIVAS HTML.pdf" target="_blank">LISTA DE DIRECTIVAS HTML</a></li>
+        <li><a href="pagina.html" target="_blank">pagina</a></li>
+          <li><a href="RESUMEN UNI_2.pdf" target="_blank">RESUMEN UNIDAD 2</a></li>
+      </ul>
+    </div>
+
+    <!-- UNIDAD III -->
+    <div class="unidad" id="unidad3">
+      <h3 onclick="toggleSection('unidad3-list')">UNIDAD III</h3>
+      <ul id="unidad3-list" class="hidden">
+        <li><a href="1.INVESTIGACION U3.pdf" target="_blank">INVESTIGACIÓN</a></li>
+        <li><a href="2.PRESENTACION UNIDAD 3_INFORMATICA.pdf" target="_blank">PRESENTACIÓN</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('videos3-list')">VIDEOS DE APOYO</span>
+          <ul id="videos3-list" class="sub-list hidden">
+            <li><a href="https://youtu.be/q8MeNBwRtPU?si=OZzMYs58bYKrTSe5" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/WLsTzYBFb8I?si=wM_T0nq36726bTJl" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/2pB17gRLIdw?si=5Uq_ZeoFzdfQv1-L" target="_blank">Video 3</a></li>
+          </ul>
+        </li>
+        <li><a href="3.Guia de estudio_Cuestionario_TIC_Teletrabajo_Competitividad.pdf" target="_blank">GUÍA DE ESTUDIO</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('resumenes3-list')">RESÚMENES Y PRÁCTICAS</span>
+          <ul id="resumenes3-list" class="sub-list hidden">
+        <li><a href="Practica en clase_compracion de respuestas.pdf" target="_blank">Practica en clase_compracion de respuestas</a></li>
+        <li><a href="Practica en clase.-clasificacion de ias.pdf" target="_blank">Practica en clase.-clasificacion de ias</a></li>
+        <li><a href="Practica en clase- herramientas de teletrabajo.pdf" target="_blank">Practica en clase- herramientas de teletrabajo</a></li>
+        <li><a href="RESUMEN UNI_3.pdf" target="_blank">RESUMEN UNIDAD 3</a></li>
+      </ul>
+    </div>
+
+    <!-- UNIDAD IV -->
+    <div class="unidad" id="unidad4">
+      <h3 onclick="toggleSection('unidad4-list')">UNIDAD IV</h3>
+      <ul id="unidad4-list" class="hidden">
+        <li><a href="1.INVESTIGACION U4.pdf" target="_blank">INVESTIGACIÓN</a></li>
+        <li><a href="2.PRESENTACION U4.pdf" target="_blank">PRESENTACIÓN</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('videos4-list')">VIDEOS DE APOYO</span>
+          <ul id="videos4-list" class="sub-list hidden">
+            <li><a href="https://youtu.be/W0POTsYdO08?si=KENrETPSH8NEuohA" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/gUL0WICjO8M?si=zTYGvsLow0Tbfli0" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/puhTb9XWMA0?si=2kFHm567aWj9nkFq" target="_blank">Video 3</a></li>
+          </ul>
+        </li>
+        <li><a href="3.Guia de estudio_Cuestionario_U4.pdf" target="_blank">GUÍA DE ESTUDIO</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('resumenes4-list')">RESÚMENES Y PRÁCTICAS</span>
+          <ul id="resumenes4-list" class="sub-list hidden">
+          <li><a href="TAREA.- Investigacion de host para la pagina web.pdf" target="_blank">TAREA.- Investigacion de host para la pagina web</a></li>
+        <li><a href="TAREA-Infraestructura local- HARDWARE.pdf" target="_blank">TAREA-Infraestructura local- HARDWARE</a></li>
+          <li><a href="RESUMEN UNI_4.pdf" target="_blank">RESUMEN UNIDAD 4</a></li>
+      </ul>
+    </div>
+
+    <!-- UNIDAD V -->
+    <div class="unidad" id="unidad5">
+      <h3 onclick="toggleSection('unidad5-list')">UNIDAD V</h3>
+      <ul id="unidad5-list" class="hidden">
+        <li><a href="1.INVESTIGACION U5.pdf" target="_blank">INVESTIGACIÓN</a></li>
+        <li><a href="2.PRESENTACION U5.pdf" target="_blank">PRESENTACIÓN</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('videos5-list')">VIDEOS DE APOYO</span>
+          <ul id="videos5-list" class="sub-list hidden">
+            <li><a href="https://youtu.be/Og7iI31kwPQ?si=qFkuzKxW9E6uBxUN" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/GVZmkF7OZ4U?si=poe_mfYfI0dPWUkf" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/MlyrriEzx3o?si=QBWG1-MiXkVxtwZl" target="_blank">Video 3</a></li>
+          </ul>
+        </li>
+        <li><a href="3.GUIA DE ESTUDIO_UNIDAD 5.pdf" target="_blank">GUÍA DE ESTUDIO</a></li>
+        <li>
+          <span class="link-like" onclick="toggleSection('resumenes5-list')">RESÚMENES Y PRÁCTICAS</span>
+          <ul id="resumenes5-list" class="sub-list hidden">
+            <!-- Agrega archivos para Unidad V -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script>
+    function toggleSection(listId) {
+      const element = document.getElementById(listId);
+      element.classList.toggle('hidden');
+      element.classList.toggle('visible');
+    }
+  </script>
+</body>
+</html>
